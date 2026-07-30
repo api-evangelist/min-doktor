@@ -1,8 +1,27 @@
 aid: min-doktor
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/min-doktor.png
 name: Min Doktor
-description: 'Min Doktor is a company surfaced as a portfolio company of eqt-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: health-tech. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Min Doktor is a Swedish digital healthcare provider (operated by MD
+  International AB) offering online primary care through its mobile app and web
+  service. Founded in 2013 as one of Sweden's first digital-first care providers,
+  it connects patients with doctors, psychologists and nurses for consultations,
+  prescriptions, referrals and vaccinations, and also runs white-label care
+  services for partners such as Skandia. It was surfaced as a portfolio company
+  of EQT Ventures. Min Doktor operates as a consumer/patient-facing service and
+  does not publish a public developer API or documentation surface; this profile
+  captures its verifiable public security, identity and compliance footprint.
 url: https://raw.githubusercontent.com/api-evangelist/min-doktor/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Health Tech
+- Telemedicine
+- Digital Health
+- Primary Care
+- Healthcare
+- Sweden
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +49,20 @@ maintainers:
 common:
 - type: Website
   url: https://www.mindoktor.se/
+- type: DomainSecurity
+  url: security/min-doktor-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/min-doktor-vulnerability-disclosure.yml
+- type: Security
+  url: https://skandia.mindoktor.se/responsible-disclosure-policy/
+- type: GitHubOrganization
+  url: https://github.com/mindoktor
+- type: PrivacyPolicy
+  url: https://www.mindoktor.se/integritetspolicy/
+- type: TermsOfService
+  url: https://www.mindoktor.se/anvandarvillkor/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
